@@ -18,7 +18,7 @@ INSERT INTO users (first_name, email) VALUES('Carlos','carlos@gmail.com');\
 \
 INSERT INTO users (first_name, email) VALUES('Laura','laura@gmail.com');\
 \
-CREATE TABLE call (id serial PRIMARY KEY, phone varchar(30), date date, user_id REFERENCES users (id));\
+CREATE TABLE call (id serial PRIMARY KEY, phone varchar(30), date date, user_id INTEGER REFERENCES users (id));\
 \
 ALTER TABLE users ADD COLUMN last_name varchar(30);\
 \
